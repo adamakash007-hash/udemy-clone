@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.navbar__s1__title {
+    color: #9C3BD7;
+
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar__s2 input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    align-items: center;
+
+
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.caterage {
+    display: flex;
+    padding: 10px;
+
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+}
+
+.caterage p {
+    background-color: #9C3BD7;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.sales-image {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.recommended {
+    padding: 10px;
+
+}
+
+.recommended__container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: 20%;
+    
+
+
+}
+
+.course-card img {
+    width: 200px;
+
+
+}
+
+.topics {
+    padding: 10px;
+}
+
+.topics__container {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+
+.topics__container p {
+    background-color: yellow;
+    
+    border: solid grey 2px;
+    font-size: xx-large;
+    margin: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+.footer__one__s2{
+    background-color: aliceblue;
+    color: black;
+}
+
+.footer__one p {
+    margin: 10px;
+}
+
+.footer__two {
+    display: flex;
+    justify-content:space-between ;
+    margin: 10px;
+    align-items: center;
+}
