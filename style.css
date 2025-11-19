@@ -10,10 +10,14 @@ body {
 .navbar {
     padding: 20px;
     display: flex;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
     justify-content: space-between;
     border-bottom: solid black 1px;
     gap: 30px;
     align-items: center;
+    background-color: white;
 
 }
 
@@ -26,8 +30,12 @@ body {
     padding: 10px;
     border: solid black 1px;
     border-radius: 30px;
-    width: 60%;
+    flex-basis: 50%;
     display: flex;
+    
+
+    
+
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -36,8 +44,8 @@ body {
     padding: 10px;
     border: none;
     width: 100%;
-    font-size: 16px;
-    align-items: center;
+    font-size: 16px; 
+   
 
 
 }
@@ -50,6 +58,27 @@ body {
     padding: 10px;
     display: flex;
     gap: 30px;
+}
+
+
+.myleaning{ 
+position: relative;
+cursor: pointer;
+}
+.myleaning__popup{
+position: absolute;
+background-color:black;
+color:white;
+border: solid black 1px;
+padding: 20px;
+top: 150%;
+right: 0;
+width: 100px;
+display: none;
+
+}
+.myleaning:hover .myleaning__popup{
+    display: block;
 }
 
 .caterage {
@@ -68,10 +97,25 @@ body {
 }
 
 .sales-image {
+    display: flex;
     flex-wrap: wrap;
+    position: relative;
     width: 100%;
-    margin-left: 2px;
-    margin-top: 10px;
+   
+}
+.sales-image img{
+    width: 100%;
+}
+.sales-image__offer{
+    background-color: white; 
+
+    color: black;
+    padding: 10px;
+position: absolute;
+border: solid black 2px;
+left: 20%;
+top: 40%;
+
 }
 
 .recommended {
@@ -94,7 +138,7 @@ body {
 }
 
 .course-card img {
-    width: 200px;
+    width:100%;
 
 
 }
@@ -105,7 +149,7 @@ body {
 
 .topics__container {
     display: flex;
-    gap: 15px;
+    gap: 0px;
     padding: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
@@ -131,14 +175,14 @@ body {
 
 .footer__one {
     display: flex;
-    justify-content: space-between;
+  
     margin: 10px;
     padding: 10px;
     gap: 20px;
 }
 .footer__one__s2{
-    background-color: aliceblue;
-    color: black;
+    
+    color:white;
 }
 
 .footer__one p {
