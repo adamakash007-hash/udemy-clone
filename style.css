@@ -31,20 +31,18 @@ body {
     border: solid black 1px;
     border-radius: 30px;
     flex-basis: 50%;
-    display: flex;
-
-
-
-
-    flex-wrap: wrap;
-    gap: 10px;
+   display: flex;
+   align-items: center;
+   
+    
+  
 }
 
 .navbar__s2 input {
     padding: 10px;
     border: none;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
 
 
 
@@ -59,11 +57,14 @@ body {
     display: flex;
     gap: 30px;
 }
-
+.navbar__s4{
+    display: none;
+}
 
 .myleaning {
     position: relative;
     cursor: pointer;
+    
 }
 
 .myleaning__popup {
@@ -81,6 +82,7 @@ body {
 
 .myleaning:hover .myleaning__popup {
     display: block;
+    
 }
 
 .caterage {
@@ -97,11 +99,12 @@ body {
     border-bottom: solid 1px black;
     padding: 10px;
     border-radius: 30px;
-       border: solid 1px black;
-       cursor:pointer;
-       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: solid 1px black;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.caterage p:hover{
+
+.caterage p:hover {
     background-color: yellowgreen;
     border: solid 1px black;
     color: black;
@@ -132,21 +135,23 @@ body {
     top: 40%;
     animation-name: zoom;
     animation-duration: 1s;
-   opacity: 0;
+    opacity: 0;
     animation-fill-mode: forwards;
 
 }
-@keyframes zoom { 
-0%{
-    transform: scale(0);
-   
-}
-100%{
-    transform: scaleX(1);
-    opacity: 1;
 
-}
-    
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+
 }
 
 .recommended {
@@ -162,7 +167,9 @@ body {
 }
 
 .course-card {
-    width: 20%;
+    flex-basis: 20%;
+    
+    margin: 5px;
 
 
 
@@ -206,7 +213,6 @@ body {
 
 .footer__one {
     display: flex;
-
     margin: 10px;
     padding: 10px;
     gap: 20px;
@@ -224,6 +230,38 @@ body {
 .footer__two {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
     align-items: center;
+    padding: 10px;
+    margin: 10px;
 }
+
+/* media querys */
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    .navbar__s2,.navbar__s3,.caterage{
+        display: none;
+    }
+    .course-card{
+        flex-basis:40% ;
+    }
+     .navbar__s4{
+   display: block;
+   }
+   
+    }
+  @media screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+    .navbar__s2,.navbar__s3,.caterage{
+        display: none;
+    }
+   .course-card{
+    flex-basis: 40%;
+   }
+   .navbar__s4{
+   display: block;
+   }
+    }
